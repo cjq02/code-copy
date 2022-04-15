@@ -8,7 +8,7 @@ Created on 2021/07/12
 """
 
 from data.file_list import get_file_path_list
-from utils.copy_utils import do_copy, replace_package
+from utils.copy_utils import do_copy, do_replace
 
 class Config:
     def __init__(self):
@@ -20,4 +20,4 @@ class Config:
 def execute(config):
     for file_path in get_file_path_list():
         do_copy(file_path, config)
-        replace_package(file_path, config)
+        do_replace(file_path, config)

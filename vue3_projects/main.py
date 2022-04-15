@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# 命令：python .\main.py demo_to_meeting   
 
 """
 
