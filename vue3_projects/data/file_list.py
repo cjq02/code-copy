@@ -1,83 +1,88 @@
 FILE_PATH_LIST = [
 
     # --- vue root ---  #
-    'vue/package.json',
-    'vue/vite.plugin.ext.js',
-    'vue/vite.config.js',
-    'vue/.eslintrc.js',
+    # 'vue/package.json',
+    # 'vue/vite.plugin.ext.ts',
+    # 'vue/vite.config.ts',
+    # 'vue/.eslintrc.js',
 
     # --- vue src ---  #
-    'vue/src/main.ts',
-    'vue/src/common/global.ts',
+    # 'vue/src/main.ts',
+    # 'vue/src/common/global.ts',
+    # 'vue/auto-imports.d.ts',
+    # 'vue/.eslintrc-auto-import.json',
 
     # --- code ---  #
-    'api/src/main/java/com/jiujie/{sign}/sys/service/ICodeService.java',
-    'api/src/main/java/com/jiujie/{sign}/sys/vo/CodeVOExt.java',
-    'api/src/main/java/com/jiujie/{sign}/application/vo/EnumVO.java',
-    'api/src/main/java/com/jiujie/{sign}/sys/enumerate/CodeModifyStatusEnum.java',
-    'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/CodeMapper.xml',
-    'service/src/main/java/com/jiujie/{sign}/sys/service/CodeService.java',
-    'web/src/main/java/com/jiujie/{sign}/sys/web/CodeController.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICodeService.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/vo/CodeVOExt.java',
+    # 'api/src/main/java/com/jiujie/{sign}/application/vo/EnumVO.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/enumerate/CodeModifyStatusEnum.java',
+    # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/CodeMapper.xml',
+    # 'service/src/main/java/com/jiujie/{sign}/sys/service/CodeService.java',
+    # 'web/src/main/java/com/jiujie/{sign}/sys/web/CodeController.java',
     # 'web/src/main/java/com/jiujie/{sign}/common/web/CommonApiController.java',
-    'web/src/main/java/com/jiujie/{sign}/sys/handler/CodeHandler.java',
+    # 'web/src/main/java/com/jiujie/{sign}/sys/handler/CodeHandler.java',
     # 'web/src/main/java/com/jiujie/{sign}/application/runner/CodeCommandLineRunner.java',
-    'web/src/main/resources/static/template/code_js.ftl',
-    'web/src/main/resources/static/template/code_json.ftl',
-    'web/src/main/resources/static/template/enum_js.ftl',
-    'web/src/main/resources/static/template/enum_class.ftl',
-    'vue/src/api/sys/code.api.js',
-    'vue/src/views/sys/code',
+    # 'web/src/main/resources/static/template/code_js.ftl',
+    # 'web/src/main/resources/static/template/code_json.ftl',
+    # 'web/src/main/resources/static/template/enum_js.ftl',
+    # 'web/src/main/resources/static/template/enum_class.ftl',
+    # 'vue/src/api/sys/code.api.js',
+    # 'vue/src/views/sys/code',
 
     # --- api ---  #
     'vue/src/api/common.api.js',
+    'vue/src/api/login.api.js',
     # 'vue/src/api/sys/menu.api.js',
     # 'vue/src/api/sys/role.api.js',
     # 'vue/src/api/sys/user.api.js',
+    # 'vue/src/api/sys/corp.api.js',
 
     # --- components ---  #
     # 'vue/src/components/TableComb/index.vue',
-    # 'vue/src/components/TableEdit/index.vue',
     'vue/src/components',
 
+    # --- directive ---  #
+    'vue/src/directive',
+
     # --- filters ---  #
-    'vue/src/filters',
+    # 'vue/src/filters',
 
     # --- hooks ---  #
-    'vue/src/hooks',
+    # 'vue/src/hooks',
+
+    # --- icons ---  #
+    'vue/src/icons/nav-bar',
 
     # --- layout ---  #
     # 'vue/src/layout/components/Navbar.vue',
     # 'vue/src/layout/components/Sidebar/index.vue',
     # 'vue/src/layout/components',
-    'vue/src/layout/components/ResetPwd/index.vue',
+    # 'vue/src/layout/components/ResetPwd/index.vue',
+    # 'vue/src/layout/components/Sidebar/Item.jsx',
+    # 'vue/src/layout/components/Sidebar/SidebarIcon.vue',
 
     # --- mixin ---  #
     # 'vue/src/mixins/lib/common.mixin.js',
-    'vue/src/mixins',
+    # 'vue/src/mixins',
+    # 'vue/src/router',
+
+    # --- router ---  #
 
     # --- store ---  #
-    'vue/src/store',
+    # 'vue/src/store',
 
     # --- styles ---  #
-    'vue/src/styles',
+    # 'vue/src/styles',
     # 'vue/src/styles/common.scss',
     # 'vue/src/styles/sidebar.scss',
 
     # --- views/sys ---  #
     # 'vue/src/views'
-    # 'vue/src/views/sys/code',
-    'vue/src/views/account',
-    'vue/src/views/sys',
+    # 'vue/src/views/account',
+    # 'vue/src/views/sys',
+    # 'vue/src/views/icons',
 
-    # --- iconfont ---  #
-    # 'vue/src/styles/font/demo.css',
-    # 'vue/src/styles/font/demo_index.html',
-    # 'vue/src/styles/font/iconfont.css',
-    # 'vue/src/styles/font/iconfont.js',
-    # 'vue/src/styles/font/iconfont.json',
-    # 'vue/src/styles/font/iconfont.ttf',
-    # 'vue/src/styles/font/iconfont.woff',
-    # 'vue/src/styles/font/iconfont.woff2',
 
     # --- utils ---  #
     # 'vue/src/utils/request.js',
@@ -97,19 +102,10 @@ FILE_PATH_LIST = [
     # 'web/src/main/java/com/jiujie/{sign}/application/shiro/SimpleCaptchaServlet.java',
 
     # --- business ---  #
-    'web/src/main/java/com/jiujie/{sign}/sys',
-    'service/src/main/java/com/jiujie/{sign}/sys',
-    'api/src/main/java/com/jiujie/{sign}/sys',
-    'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper',
-    # 'vue/src/views/sys/user/index.vue',
-    # 'vue/src/views/sys/corp/index.vue',
-    # 'vue/src/views/sys/role/index.vue',
-    # 'vue/src/views/sys/corp/index.vue',
-    # 'vue/src/views/sys/user/user.js',
-    # 'vue/src/views/sys/menu/menu.js',
-    # 'vue/src/views/sys/role/role.js',
-    # 'vue/src/views/sys/corp/corp.js',
-    # 'vue/src/store/modules/menu.module.js',
+    # 'web/src/main/java/com/jiujie/{sign}/sys',
+    # 'service/src/main/java/com/jiujie/{sign}/sys',
+    # 'api/src/main/java/com/jiujie/{sign}/sys',
+    # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/MenuController.java',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/RoleController.java',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/UserController.java',
@@ -128,6 +124,7 @@ FILE_PATH_LIST = [
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICorpService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/vo/UserVOExt.java',
     # 'web/src/main/java/com/jiujie/{sign}/application/web/LoginController.java'
+    # 'web/src/main/java/com/jiujie/{sign}/application/web/FileController.java'
 ]
 
 

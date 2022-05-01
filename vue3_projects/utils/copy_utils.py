@@ -2,6 +2,9 @@ from shutil import copyfile, copytree, rmtree
 
 import os
 
+# replacement strings
+WINDOWS_LINE_ENDING = b'\r\n'
+UNIX_LINE_ENDING = b'\n'
 
 def do_copy(file_path, config):
     src = '{project_path}{file_path}'.format(
@@ -31,26 +34,25 @@ def mkdir(path):
 def replace_keyword(file_path, config):
     # if '{sign}' not in file_path and file_path.endswith('.xml') == False:
     #     return
-    suffixes = ('.js', '.ts', '.vue', '.java', '.xml')
+    suffixes = ('.js', '.jsx', '.ts', '.vue', '.java', '.xml')
+    backend_suffixes = ('.java', '.xml')
     if file_path.endswith(suffixes) == False:
         print('不符合替换规则的文件：{}'.format(file_path))
         return
     
-    # read input file
-    fin = open(file_path, encoding='UTF-8')
-    # read file contents to string
-    data = fin.read()
+    with open(file_path, 'rb') as open_file:
+        content = open_file.read()
     # replace all occurrences of the required string
     origin_package_name = 'com.jiujie.{}'.format(config.origin_package_sign)
     target_package_name = 'com.jiujie.{}'.format(config.target_package_sign)
-    data = data.replace(origin_package_name, target_package_name)
+    content = content.replace(origin_package_name.encode(), target_package_name.encode())
+    if file_path.endswith(backend_suffixes) == False:
+        content = content.replace(WINDOWS_LINE_ENDING, UNIX_LINE_ENDING)
     print('{} 文件内容关键词替换成功 -- {} to {}'.format(file_path, origin_package_name, target_package_name))
-    # close the input file
-    fin.close()
     # open the input file in write mode
-    fin = open(file_path, "w", encoding='UTF-8')
+    fin = open(file_path, "wb")
     # overrite the input file with the resulting data
-    fin.write(data)
+    fin.write(content)
     # close the file
     fin.close()
 
