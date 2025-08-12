@@ -12,7 +12,8 @@ def do_copy(file_path, config):
     dst = '{project_path}{file_path}'.format(
         project_path=config.target_project_path, file_path=file_path).replace('{sign}', config.target_package_sign)
     if os.path.isdir(src):
-        rmtree(dst)
+        if os.path.isdir(dst):
+            rmtree(dst)
         mkdir(dst)
         copytree(src, dst,  dirs_exist_ok=True)
     else:
