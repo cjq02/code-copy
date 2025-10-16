@@ -24,7 +24,7 @@ FILE_PATH_LIST = [
     # --- vue src ---  #
     # '/src/main.ts',
     # '/src/settings.ts',
-    # '/src/permission.ts',
+    'vue/src/permission.ts',
     # '/src/mockProdServer.ts',
     # '/src/common/global.ts',
 
@@ -54,20 +54,20 @@ FILE_PATH_LIST = [
     # '/src/api/sys/role.api.js',
     # '/src/api/sys/user.api.js',
     # '/src/api/sys/corp.api.js',
-    'vue/src/api/sys/dataQuery.api.ts',
+    # 'vue/src/api/sys/dataQuery.api.ts',
 
     # --- components ---  #
     # '/src/components/TableComb/index.vue',
-    # '/src/components',
+    # 'vue/src/components',
 
     # --- directive ---  #
     # '/src/directive',
 
     # --- filters ---  #
-    # '/src/filters',
+    'vue/src/filters',
 
     # --- hooks ---  #
-    # '/src/hooks',
+    # 'vue/src/hooks',
 
     # --- icons ---  #
     # '/src/icons/nav-bar',
@@ -84,10 +84,10 @@ FILE_PATH_LIST = [
 
 
     # --- router ---  #
-    # '/src/router',  
+    # 'vue/src/router',  
 
     # --- store ---  #
-    # '/src/store',
+    'vue/src/store',
 
     # --- styles ---  #
     # '/src/styles',
@@ -100,13 +100,13 @@ FILE_PATH_LIST = [
     # '/src/views/account',
     # '/src/views/sys',
     # '/src/views/sys/user',
-    # '/src/views/sys/menu',
+    'vue/src/views/sys/menu',
     'vue/src/views/sys/role',
-    # '/src/views/sys/code',
+    'vue/src/views/sys/code',
     # '/src/views/sys/announce',
     # '/src/views/icons',
     # '/src/views/login',
-    'vue/src/views/sys/dataQuery',
+    # 'vue/src/views/sys/dataQuery',
 
     # --- utils ---  #
     # '/src/utils',
@@ -134,26 +134,28 @@ FILE_PATH_LIST = [
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/RoleController.java',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/UserController.java',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/CorpController.java',
-    # 'service/src/main/java/com/jiujie/{sign}/sys/service/MenuService.java',
+    'service/src/main/java/com/jiujie/{sign}/sys/service/MenuService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/RoleService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/UserService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/CorpService.java',
-    'service/src/main/java/com/jiujie/{sign}/sys/service/DataQueryService.java',
-    # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/MenuMapper.xml',
+    # 'service/src/main/java/com/jiujie/{sign}/sys/service/DataQueryService.java',
+    'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/MenuMapper.xml',
     # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/RoleMapper.xml',
     # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/UserMapper.xml',
     # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/CorpMapper.xml',
-    'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/DataQueryMapper.xml',
+    # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/DataQueryMapper.xml',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/IMenuService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/IRoleService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/IUserService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICorpService.java',
-    'api/src/main/java/com/jiujie/{sign}/sys/service/IDataQueryService.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/service/IDataQueryService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/vo/UserVOExt.java',
-    'api/src/main/java/com/jiujie/{sign}/sys/vo/DataQueryVO.java',
+    'api/src/main/java/com/jiujie/{sign}/sys/vo/MenuVOExt.java',
+    'api/src/main/java/com/jiujie/{sign}/sys/vo/MenuMeta.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/vo/DataQueryVO.java',
     # 'web/src/main/java/com/jiujie/{sign}/application/web/LoginController.java'
     # 'web/src/main/java/com/jiujie/{sign}/application/web/FileController.java',
-    'web/src/main/java/com/jiujie/{sign}/sys/web/DataQueryController.java'
+    # 'web/src/main/java/com/jiujie/{sign}/sys/web/DataQueryController.java'
 ]
 
 
