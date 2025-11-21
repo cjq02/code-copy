@@ -4,7 +4,7 @@ FILE_PATH_LIST = [
     # '/package.json',
     # '/tsconfig.json',
     # '/vite.config.ext.ts',
-    # '/vite.config.ts',
+    # 'vue/vite.config.ts',
     # '/.eslintrc.js',
     # '/auto-imports.d.ts',
     # '/.eslintrc-auto-import.json',
@@ -22,11 +22,15 @@ FILE_PATH_LIST = [
     # '/.husky',
 
     # --- vue src ---  #
-    # '/src/main.ts',
-    # '/src/settings.ts',
-    'vue/src/permission.ts',
+    # 'vue/src/main.ts',
+    # 'vue/src/App.vue',
+    # 'vue/src/settings.ts',
+    # 'vue/src/permission.ts',
     # '/src/mockProdServer.ts',
     # '/src/common/global.ts',
+
+    # --- vue swagger ---  #
+    # 'vue/swagger',
 
     # --- code ---  #
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICodeService.java',
@@ -57,23 +61,25 @@ FILE_PATH_LIST = [
     # 'vue/src/api/sys/dataQuery.api.ts',
 
     # --- components ---  #
-    # '/src/components/TableComb/index.vue',
+    # 'vue/src/components/TableComb',
     # 'vue/src/components',
 
     # --- directive ---  #
     # '/src/directive',
 
     # --- filters ---  #
-    'vue/src/filters',
+    # 'vue/src/filters',
 
     # --- hooks ---  #
     # 'vue/src/hooks',
 
     # --- icons ---  #
-    # '/src/icons/nav-bar',
+    # 'vue/src/icons/common',
+    # 'vue/src/icons/menu',
+    # '/src/icons',
 
     # --- layout ---  #
-    # '/src/layout',
+    # 'vue/src/layout',
     # '/src/layout/components/Navbar.vue',
     # '/src/layout/components/Sidebar/index.vue',
     # '/src/layout/components',
@@ -87,10 +93,10 @@ FILE_PATH_LIST = [
     # 'vue/src/router',  
 
     # --- store ---  #
-    'vue/src/store',
+    # 'vue/src/store',
 
     # --- styles ---  #
-    # '/src/styles',
+    # 'vue/src/styles',
     # '/src/styles/common.scss',
     # '/src/styles/sidebar.scss',
     # '/src/styles/element-style-override.scss',
@@ -98,14 +104,17 @@ FILE_PATH_LIST = [
     # --- views/sys ---  #
     # '/src/views'
     # '/src/views/account',
-    # '/src/views/sys',
-    # '/src/views/sys/user',
-    'vue/src/views/sys/menu',
-    'vue/src/views/sys/role',
-    'vue/src/views/sys/code',
+    # 'vue/src/views/sys',
+    # 'vue/src/views/sys/announce',
+    # 'vue/src/views/sys/code',
+    # 'vue/src/views/sys/dept',
+    # 'vue/src/views/sys/menu',
+    # 'vue/src/views/sys/role',
+    # 'vue/src/views/sys/user',
     # '/src/views/sys/announce',
     # '/src/views/icons',
     # '/src/views/login',
+    # 'vue/src/views/login/login.scss',
     # 'vue/src/views/sys/dataQuery',
 
     # --- utils ---  #
@@ -134,28 +143,35 @@ FILE_PATH_LIST = [
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/RoleController.java',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/UserController.java',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/CorpController.java',
-    'service/src/main/java/com/jiujie/{sign}/sys/service/MenuService.java',
+    # 'web/src/main/java/com/jiujie/{sign}/application/web/LoginController.java'
+    # 'web/src/main/java/com/jiujie/{sign}/application/web/FileController.java',
+    # 'web/src/main/java/com/jiujie/{sign}/sys/web/DataQueryController.java'
+     'web/src/main/java/com/jiujie/{sign}/sys/web/ExampleController.java',
+    # 'service/src/main/java/com/jiujie/{sign}/sys/service/MenuService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/RoleService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/UserService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/CorpService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/DataQueryService.java',
-    'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/MenuMapper.xml',
+    'service/src/main/java/com/jiujie/{sign}/sys/service/ExampleService.java',
+    # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/MenuMapper.xml',
     # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/RoleMapper.xml',
     # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/UserMapper.xml',
     # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/CorpMapper.xml',
     # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/DataQueryMapper.xml',
+    'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/ExampleMapper.xml',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/IMenuService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/IRoleService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/IUserService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICorpService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/IDataQueryService.java',
+    'api/src/main/java/com/jiujie/{sign}/sys/service/IExampleService.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/vo/UserVOExt.java',
-    'api/src/main/java/com/jiujie/{sign}/sys/vo/MenuVOExt.java',
-    'api/src/main/java/com/jiujie/{sign}/sys/vo/MenuMeta.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/vo/MenuVOExt.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/vo/MenuMeta.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/vo/DataQueryVO.java',
-    # 'web/src/main/java/com/jiujie/{sign}/application/web/LoginController.java'
-    # 'web/src/main/java/com/jiujie/{sign}/application/web/FileController.java',
-    # 'web/src/main/java/com/jiujie/{sign}/sys/web/DataQueryController.java'
+    'api/src/main/java/com/jiujie/{sign}/sys/vo/ExampleVO.java',
+    'api/src/main/java/com/jiujie/{sign}/sys/vo/ExampleVOExt.java',
+
 ]
 
 

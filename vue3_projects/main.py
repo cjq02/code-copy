@@ -21,6 +21,8 @@ def main():
     config = Config()
     config.origin_package_sign = origin.PACKAGE_SIGN
     config.target_package_sign = target.PACKAGE_SIGN
+    config.origin_package_path = getattr(origin, 'PACKAGE_PATH', origin.PACKAGE_SIGN)
+    config.target_package_path = getattr(target, 'PACKAGE_PATH', target.PACKAGE_SIGN)
     config.origin_project_path = origin.PROJECT_PATH
     config.target_project_path = target.PROJECT_PATH
 

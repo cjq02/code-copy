@@ -8,9 +8,9 @@ UNIX_LINE_ENDING = b'\n'
 
 def do_copy(file_path, config):
     src = '{project_path}{file_path}'.format(
-        project_path=config.origin_project_path, file_path=file_path).replace('{sign}', config.origin_package_sign)
+        project_path=config.origin_project_path, file_path=file_path).replace('{sign}', config.origin_package_path)
     dst = '{project_path}{file_path}'.format(
-        project_path=config.target_project_path, file_path=file_path).replace('{sign}', config.target_package_sign)
+        project_path=config.target_project_path, file_path=file_path).replace('{sign}', config.target_package_path)
     if os.path.isdir(src):
         if os.path.isdir(dst):
             rmtree(dst)
@@ -59,7 +59,7 @@ def replace_keyword(file_path, config):
 
 def do_replace(file_path, config):
     dst = '{project_path}{file_path}'.format(
-        project_path = config.target_project_path, file_path=file_path).replace('{sign}', config.target_package_sign)
+        project_path = config.target_project_path, file_path=file_path).replace('{sign}', config.target_package_path)
     if os.path.isdir(dst):
         for dirpath, dirnames, filenames in os.walk(dst):
             for filename in filenames:

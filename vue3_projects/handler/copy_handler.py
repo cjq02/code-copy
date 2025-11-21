@@ -16,6 +16,8 @@ class Config:
         self.origin_project_path = ''
         self.target_package_sign = ''
         self.origin_package_sign = ''
+        self.target_package_path = ''
+        self.origin_package_path = ''
 
 def execute(config):
     for file_path in get_file_path_list():
