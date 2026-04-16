@@ -31,8 +31,8 @@ FILE_PATH_LIST = [
 
     # --- vue swagger ---  #
     # 'vue/swagger',
-    'vue/swagger/apiGenerator.mjs',
-    'vue/swagger/dtsGenerator.mjs',
+    # 'vue/swagger/apiGenerator.mjs',
+    # 'vue/swagger/dtsGenerator.mjs',
 
     # --- code ---  #
     # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICodeService.java',
@@ -64,20 +64,20 @@ FILE_PATH_LIST = [
 
     # --- components ---  #
     # 'vue/src/components/TableComb',
-    'vue/src/components/FormWrapper',
-    'vue/src/components/PagingSelect',
+    # 'vue/src/components/FormWrapper',
+    # 'vue/src/components/PagingSelect',
     # 'vue/src/components',
 
     # --- directive ---  #
-    'vue/src/directive',
+    # 'vue/src/directive',
 
     # --- filters ---  #
     # 'vue/src/filters',
 
     # --- hooks ---  #
     # 'vue/src/hooks',
-    'vue/src/hooks/useBaseForm.ts',
-    'vue/src/hooks/useBasePage.ts',
+    # 'vue/src/hooks/useBaseForm.ts',
+    # 'vue/src/hooks/useBasePage.ts',
 
     # --- icons ---  #
     # 'vue/src/icons/common',
@@ -93,14 +93,14 @@ FILE_PATH_LIST = [
     # '/src/layout/components/Sidebar/Item.jsx',
     # 'vue/src/layout/components/Sidebar/SidebarItem.vue',
     # 'vue/src/layout/components/Sidebar/SidebarIcon.vue',
-    'vue/src/layout/components/TopMenu',
+    # 'vue/src/layout/components/TopMenu',
 
 
     # --- router ---  #
     # 'vue/src/router',  
 
     # --- store ---  #
-    'vue/src/store',
+    # 'vue/src/store',
 
     # --- styles ---  #
     # 'vue/src/styles',
@@ -133,7 +133,7 @@ FILE_PATH_LIST = [
 
     # --- mybatis ---  #
     # 'service/src/main/resources/META-INF/mybatis/mybatis-config.xml',
-    'service/src/main/java/com/jiujie/{sign}/application/mybatis/SortInterceptor.java',
+    # 'service/src/main/java/com/jiujie/{sign}/application/mybatis/SortInterceptor.java',
 
     # --- shiro ---  #
     # 'web/src/main/java/com/jiujie/{sign}/application/shiro/BaseFormAuthenticationFilter.java',
