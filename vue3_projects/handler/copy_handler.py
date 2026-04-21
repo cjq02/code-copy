@@ -8,7 +8,7 @@ Created on 2021/07/12
 """
 
 from data.file_list import get_file_path_list
-from utils.copy_utils import do_copy, do_replace
+from utils.copy_utils import CopyTransaction, do_copy, do_replace
 
 class Config:
     def __init__(self):
@@ -20,6 +20,14 @@ class Config:
         self.origin_package_path = ''
 
 def execute(config):
-    for file_path in get_file_path_list():
-        do_copy(file_path, config)
-        do_replace(file_path, config)
+    transaction = CopyTransaction()
+    try:
+        for file_path in get_file_path_list():
+            do_copy(file_path, config, transaction=transaction)
+            do_replace(file_path, config)
+    except Exception:
+        transaction.rollback()
+        print('生成出现异常，已还原已修改的文件。')
+        raise
+    else:
+        transaction.commit()
