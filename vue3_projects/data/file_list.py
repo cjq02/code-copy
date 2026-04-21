@@ -34,25 +34,6 @@ FILE_PATH_LIST = [
     # 'vue/swagger/apiGenerator.mjs',
     # 'vue/swagger/dtsGenerator.mjs',
 
-    # --- code ---  #
-    # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICodeService.java',
-    # 'api/src/main/java/com/jiujie/{sign}/sys/vo/CodeVOExt.java',
-    # 'api/src/main/java/com/jiujie/{sign}/application/vo/EnumVO.java',
-    # 'api/src/main/java/com/jiujie/{sign}/sys/enumerate/CodeModifyStatusEnum.java',
-    # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/CodeMapper.xml',
-    # 'service/src/main/java/com/jiujie/{sign}/sys/service/CodeService.java',
-    # 'web/src/main/java/com/jiujie/{sign}/application/utils/FreeMarkerUtils.java',
-    # 'web/src/main/java/com/jiujie/{sign}/sys/web/CodeController.java',
-    # 'web/src/main/java/com/jiujie/{sign}/common/web/CommonApiController.java',
-    # 'web/src/main/java/com/jiujie/{sign}/sys/handler/CodeHandler.java',
-    # 'web/src/main/java/com/jiujie/{sign}/application/runner/CodeCommandLineRunner.java',
-    # 'web/src/main/resources/static/template/code_js.ftl',
-    # 'web/src/main/resources/static/template/code_json.ftl',
-    # 'web/src/main/resources/static/template/enum_js.ftl',
-    # 'web/src/main/resources/static/template/enum_class.ftl',
-    # '/src/api/sys/code.api.js',
-    # '/src/views/sys/code',
-
     # --- api ---  #
     # '/src/api/common.api.ts',
     # '/src/api/login.api.js',
@@ -80,7 +61,7 @@ FILE_PATH_LIST = [
     # 'vue/src/hooks/useBasePage.ts',
 
     # --- icons ---  #
-    # 'vue/src/icons/common',
+    'vue/src/icons/common',
     # 'vue/src/icons/menu',
     # '/src/icons',
 
@@ -130,6 +111,9 @@ FILE_PATH_LIST = [
 
     # --- application ---  #
     # 'api/src/main/java/com/jiujie/{sign}/application/vo/Page.java',
+    # 'api/src/main/java/com/jiujie/{sign}/utils/BeanCopyUtils.java',
+    # 'web/src/main/java/com/jiujie/{sign}/application/utils/ZipUtils.java',
+    # 'web/src/main/java/com/jiujie/{sign}/common/util/WebUploadUtils.java',
 
     # --- mybatis ---  #
     # 'service/src/main/resources/META-INF/mybatis/mybatis-config.xml',
@@ -153,7 +137,7 @@ FILE_PATH_LIST = [
     # 'web/src/main/java/com/jiujie/{sign}/application/web/LoginController.java',
     # 'web/src/main/java/com/jiujie/{sign}/application/web/FileController.java',
     # 'web/src/main/java/com/jiujie/{sign}/sys/web/DataQueryController.java'
-    #  'web/src/main/java/com/jiujie/{sign}/sys/web/ExampleController.java',
+    # 'web/src/main/java/com/jiujie/{sign}/sys/web/ExampleController.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/MenuService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/RoleService.java',
     # 'service/src/main/java/com/jiujie/{sign}/sys/service/UserService.java',
@@ -178,6 +162,55 @@ FILE_PATH_LIST = [
     # 'api/src/main/java/com/jiujie/{sign}/sys/vo/DataQueryVO.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/vo/ExampleVO.java',
     # 'api/src/main/java/com/jiujie/{sign}/sys/vo/ExampleVOExt.java',
+
+    # --- code ---  #
+    # 'api/src/main/java/com/jiujie/{sign}/sys/service/ICodeService.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/vo/CodeVOExt.java',
+    # 'api/src/main/java/com/jiujie/{sign}/application/vo/EnumVO.java',
+    # 'api/src/main/java/com/jiujie/{sign}/sys/enumerate/CodeModifyStatusEnum.java',
+    # 'service/src/main/resources/com/jiujie/{sign}/sys/sqlmapper/CodeMapper.xml',
+    # 'service/src/main/java/com/jiujie/{sign}/sys/service/CodeService.java',
+    # 'web/src/main/java/com/jiujie/{sign}/application/utils/FreeMarkerUtils.java',
+    # 'web/src/main/java/com/jiujie/{sign}/sys/web/CodeController.java',
+    # 'web/src/main/java/com/jiujie/{sign}/common/web/CommonApiController.java',
+    # 'web/src/main/java/com/jiujie/{sign}/sys/handler/CodeHandler.java',
+    # 'web/src/main/java/com/jiujie/{sign}/application/runner/CodeCommandLineRunner.java',
+    # 'web/src/main/resources/static/template/code_js.ftl',
+    # 'web/src/main/resources/static/template/code_json.ftl',
+    # 'web/src/main/resources/static/template/enum_js.ftl',
+    # 'web/src/main/resources/static/template/enum_class.ftl',
+    # '/src/api/sys/code.api.js',
+    # '/src/views/sys/code',
+
+    # --- file ---
+    'api/src/main/java/com/jiujie/{sign}/sys/service/IFileService.java',
+    'api/src/main/java/com/jiujie/{sign}/sys/vo/FileVOExt.java',
+    'service/src/main/java/com/jiujie/{sign}/sys/service/FileService.java',
+    'web/src/main/java/com/jiujie/{sign}/application/web/FileController.java',
+
+    # --- file manage ---  #
+    'api/src/main/java/com/jiujie/{sign}/file/enumerate/ShareTypeEnum.java',
+    'api/src/main/java/com/jiujie/{sign}/file/vo/FileManageVOExt.java',
+    'api/src/main/java/com/jiujie/{sign}/file/service/IFileManageService.java',
+    'api/src/main/java/com/jiujie/{sign}/file/service/IFileManageClassifyService.java',
+    'service/src/main/java/com/jiujie/{sign}/file/service/FileManageService.java',
+    'service/src/main/java/com/jiujie/{sign}/file/service/FileManageClassifyService.java',
+    'service/src/main/resources/com/jiujie/{sign}/file/sqlmapper/FileManageMapper.xml',
+    'service/src/main/resources/com/jiujie/{sign}/file/sqlmapper/FileManageClassifyMapper.xml',
+    'web/src/main/java/com/jiujie/{sign}/file/web/FileManageController.java',
+    'web/src/main/java/com/jiujie/{sign}/file/web/FileManageClassifyController.java',
+    'vue/src/views/file/useFile.ts',
+    'vue/src/views/file/components/FileTransfer.vue',
+    'vue/src/views/file/components/UploadTree.vue',
+    'vue/src/views/file/components/useUploadTree.ts',
+    'vue/src/views/file/fileArchive/index.vue',
+    'vue/src/views/file/fileClassify/index.vue',
+    'vue/src/views/file/fileMaintenance/index.vue',
+    'vue/src/views/file/fileMaintenance/fileMaintenanceForm.vue',
+    'vue/src/views/file/fileMaintenance/fileMaintenanceView.vue',
+    'vue/src/assets/img/file-icon',
+    'vue/src/assets/img/emptyDownload.png',
+    'vue/src/assets/img/upload-gif.gif',
 
 ]
 

@@ -15,8 +15,12 @@ def do_copy(file_path, config):
         if os.path.isdir(dst):
             rmtree(dst)
         mkdir(dst)
-        copytree(src, dst,  dirs_exist_ok=True)
+        copytree(src, dst, dirs_exist_ok=True)
     else:
+        dst_dir = os.path.dirname(dst)
+        if dst_dir and not os.path.exists(dst_dir):
+            os.makedirs(dst_dir, exist_ok=True)
+            print('文件夹 {} 创建成功！'.format(dst_dir))
         copyfile(src, dst)
     print('文件 {} 复制到 {} 成功！'.format(src, dst))
 
@@ -25,11 +29,10 @@ def mkdir(path):
     # 判断是否存在文件夹如果不存在则创建文件夹
     if not os.path.exists(path):
         print('文件 {} 不存在！'.format(path))
-        dir = path[0:path.rindex('/')]
-        # makedirs 创建文件时如果路径不存在会创建这个路径
-        if not os.path.exists(dir):
-            os.makedirs(dir)
-            print('文件夹 {} 创建成功！'.format(dir))
+        dir_path = os.path.dirname(path)
+        if dir_path and not os.path.exists(dir_path):
+            os.makedirs(dir_path, exist_ok=True)
+            print('文件夹 {} 创建成功！'.format(dir_path))
 
 
 def replace_keyword(file_path, config):
